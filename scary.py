@@ -1,13 +1,13 @@
 import random
 
-for i in range(10):
+for i in range(1):
     s = "l"
     for j in range(100):
         lastChar = s[-1]
         prob = random.random()
 
         if (lastChar == 'l'):
-            charToAdd = '_'
+            charToAdd = 'i'
 
         elif (lastChar == '_'):
             if(prob >= 0 and prob < 0.5):
@@ -34,13 +34,13 @@ for i in range(10):
                 charToAdd = 'n'
 
         elif (lastChar == 'v'):
-            chartoAdd = 'e'
+            charToAdd = 'e'
 
         elif (lastChar == 'n'):
-            chartoAdd = 'e'
+            charToAdd = 'e'
 
         elif (lastChar == 'e'):
-            chartoAdd = '!'
+            charToAdd = '!'
 
         elif (lastChar == '!'):
             if(prob >= 0 and prob < 0.7):
@@ -51,4 +51,5 @@ for i in range(10):
                 charToAdd = '!'
 
         s = s + charToAdd
+
     print(s)
