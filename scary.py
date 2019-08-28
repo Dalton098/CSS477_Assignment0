@@ -1,6 +1,6 @@
 import random
 
-for i in range(1):
+for i in range(10):
     s = "l"
     for j in range(100):
         lastChar = s[-1]
