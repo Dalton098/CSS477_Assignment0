@@ -1,13 +1,15 @@
 import random
 
 for i in range(10):
-    s = "l"
+    s = "I"
+
     for j in range(100):
+
         lastChar = s[-1]
         prob = random.random()
 
-        if (lastChar == 'l'):
-            charToAdd = 'i'
+        if (lastChar == 'I'):
+            charToAdd = '_'
 
         elif (lastChar == '_'):
             if(prob >= 0 and prob < 0.5):
@@ -32,6 +34,9 @@ for i in range(10):
                 charToAdd = 'v'
             elif(prob >= 0.95 and prob < 1):
                 charToAdd = 'n'
+
+        elif (lastChar == 'l'):
+            charToAdd = 'i'
 
         elif (lastChar == 'v'):
             charToAdd = 'e'
