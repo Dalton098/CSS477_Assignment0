@@ -1,11 +1,11 @@
 import random
 
 for i in range(10):
-    s = "I"
+    sentence = "I"
 
     for j in range(100):
 
-        lastChar = s[-1]
+        lastChar = sentence[-1]
         prob = random.random()
 
         if (lastChar == 'I'):
@@ -55,6 +55,6 @@ for i in range(10):
             elif(prob >= 0.9 and prob < 1):
                 charToAdd = '!'
 
-        s = s + charToAdd
+        sentence = sentence + charToAdd
 
-    print(s)
+    print(sentence)
